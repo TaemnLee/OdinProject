@@ -1,2 +1,2 @@
-# RockPaperScissors
-This is my first JavaScript Project to enhance my skills to become a Full Stack Developer.
+# Odin Projects
+This is my repository for all of my Odin Project I have done so far
