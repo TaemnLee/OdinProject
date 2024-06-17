@@ -7,14 +7,14 @@ const scissorButton = document.querySelector("#scissors");
 const resultDiv = document.querySelector("#result");
 const scoreDiv = document.querySelector("#score");
 
-
+// Created random choices for computer by manipulating the random method.
 function getComputerChoice(){
     const choices = ["Rock", "Paper", "Scissors"];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 }
 
-
+// Used dictionaries-like object for the efficiency of the code
 function playRound(humanChoice) {
     const human = humanChoice.toUpperCase();
     const computer = getComputerChoice().toUpperCase();
@@ -32,6 +32,7 @@ function playRound(humanChoice) {
         result = "You lost!";
     }
     
+    // Manipulated some texts based on the result of the game
     resultDiv.textContent = result;
     scoreDiv.textContent = `Score: You - ${humanScore}, Computer - ${computerScore}`;
 
@@ -47,6 +48,7 @@ function playRound(humanChoice) {
     }
 }
 
+// Play the game as player click one of the buttons.
 rockButton.addEventListener("click", () =>{
     playRound("Rock");
 });
